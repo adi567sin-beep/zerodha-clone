@@ -47,7 +47,7 @@ function Signup() {
 
     try {
       const res = await axios.post(
-        "https://zerodha-clone-2-gbab.onrender.com//signup",
+        "https://zerodha-clone-2-gbab.onrender.com/signup",
         user
       );
 
