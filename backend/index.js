@@ -74,6 +74,9 @@ app.post("/signup", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("🚀 Zerodha Clone Backend is running successfully!");
+});
 
 mongoose
   .connect(process.env.MONGO_URL)
