@@ -42,33 +42,33 @@ function Navbar() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="d-flex" role="search">
             <ul class="navbar-nav mb-lg-0">
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" href="/signup">
                   Signup
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link active" href="/about">
                   About
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link active" href="/products">
                   Product
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link active" href="/pricing">
                   Pricing
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link active" href="/support">
                   Support
                 </Link>
               </li>
 
-              <li class="nav-item">
+              <li className="nav-item">
                 <a href="http://localhost:3001" onClick={(e) => {
                   e.preventDefault();
                   handleDashboard();
