@@ -43,33 +43,33 @@ function Navbar() {
           <form class="d-flex" role="search">
             <ul class="navbar-nav mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" href="/signup">
+                <Link className="nav-link active" aria-current="page" href="/signup">
                   Signup
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" href="https://zerodha-clone-3-on50.onrender.com/about">
+                <Link className="nav-link active" href="/about">
                   About
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" href="https://zerodha-clone-3-on50.onrender.com/products">
+                <Link className="nav-link active" href="/products">
                   Product
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" href="https://zerodha-clone-3-on50.onrender.com/pricing">
+                <Link className="nav-link active" href="/pricing">
                   Pricing
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" href="https://zerodha-clone-3-on50.onrender.com/support">
+                <Link className="nav-link active" href="/support">
                   Support
                 </Link>
               </li>
 
               <li class="nav-item">
-                <a href="http://localhost:3001" onclick={(e) => {
+                <a href="http://localhost:3001" onClick={(e) => {
                   e.preventDefault();
                   handleDashboard();
                 }} style={{ textDecoration: "none", color: "black", marginLeft: "40px", marginTop: "8px", display: "inline-block" }}>
