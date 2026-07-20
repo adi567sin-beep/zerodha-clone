@@ -21,7 +21,7 @@ function Navbar() {
       style={{ backgroundColor: "#FFF" }}
     >
       <div class="container p-2">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img
             src="media/images/logo2.png"
             style={{ width: "25%" }}
@@ -43,27 +43,27 @@ function Navbar() {
           <form class="d-flex" role="search">
             <ul class="navbar-nav mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="/signup">
+                <Link className="nav-link active" aria-current="page" to="/signup">
                   Signup
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" href="/about">
+                <Link className="nav-link active" to="/about">
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" href="/products">
+                <Link className="nav-link active" to="/products">
                   Product
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" href="/pricing">
+                <Link className="nav-link active" to="/pricing">
                   Pricing
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" href="/support">
+                <Link className="nav-link active" to="/support">
                   Support
                 </Link>
               </li>
