@@ -48,22 +48,22 @@ function Navbar() {
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" href="/about">
+                <Link class="nav-link active" href="https://zerodha-clone-3-on50.onrender.com/about">
                   About
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" href="/products">
+                <Link class="nav-link active" href="https://zerodha-clone-3-on50.onrender.com/products">
                   Product
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" href="/pricing">
+                <Link class="nav-link active" href="https://zerodha-clone-3-on50.onrender.com/pricing">
                   Pricing
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" href="/support">
+                <Link class="nav-link active" href="https://zerodha-clone-3-on50.onrender.com/support">
                   Support
                 </Link>
               </li>
