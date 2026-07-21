@@ -23,6 +23,7 @@ function Signup() {
 
     setError("");
     setSuccess("");
+    
   };
 
   const handleSubmit = async (e) => {
@@ -55,30 +56,37 @@ function Signup() {
 
       setError("");
       setSuccess("Signup Successful!");
-
+      localStorage.setItem("isLoggedIn", "true");
+      console.log(localStorage.getItem("isLoggedIn"));
       setTimeout(() => {
         navigate("/");
       }, 2000);
 
     } catch (err) {
-      console.log(err.response);
+  console.log(err.response);
+  console.log(err.response?.data);
 
-      if (err.response) {
-        if (err.response.data.message === "Email already exists") {
-          setError("Email already exists");
+  if (err.response) {
+    console.log(err.response.data.message);
 
-          setTimeout(() => {
-            navigate("/");
-          }, 2000);
+    if (err.response.data.message === "Email already exists") {
+      localStorage.setItem("isLoggedIn", "true");
+      console.log("Saved:", localStorage.getItem("isLoggedIn"));
 
-          return;
-        }
+      setError("Welcome back!");
 
-        setError(err.response.data.message);
-      } else {
-        setError("Server Error");
-      }
+      setTimeout(() => {
+        navigate("/");
+      }, 2000);
+
+      return;
     }
+
+    setError(err.response.data.message);
+  } else {
+    setError("Server Error");
+  }
+}
   };
 
   return (

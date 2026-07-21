@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Navbar() {
   const navigate = useNavigate();
 
-  const isLoggedIn = false; // Replace this with your actual login check
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 
   const handleDashboard = () => {
     if (!isLoggedIn) {
@@ -13,7 +13,7 @@ function Navbar() {
       navigate("/signup");
       return;
     }
-    window.location.href = "https://zerodha-clone-2-gbab.onrender.com/";
+    window.location.href = "https://zerodha-clone-4-vxpt.onrender.com";
   };
   return (
     <nav
@@ -69,7 +69,7 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <a href="http://localhost:3001" onClick={(e) => {
+                <a href="https://zerodha-clone-4-vxpt.onrender.com" onClick={(e) => {
                   e.preventDefault();
                   handleDashboard();
                 }} style={{ textDecoration: "none", color: "black", marginLeft: "40px", marginTop: "8px", display: "inline-block" }}>
